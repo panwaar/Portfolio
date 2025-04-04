@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo-color.png';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ function Navbar() {
       {/* Logo */}
       <div className="logo">
         <RouterLink to="/">
-          <img src="/logo-color.png" alt="Logo" className="w-24 md:w-32 h-auto" />
+          <img src={logo} alt="Logo" className="w-24 md:w-32 h-auto" />
         </RouterLink>
       </div>
 
