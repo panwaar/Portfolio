@@ -16,20 +16,39 @@ function Navbar() {
         </RouterLink>
       </div>
 
-      {/* Mobile Menu Button */}
-      <button
-        className="md:hidden text-white z-[1001]"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {isOpen ? <X size={30} /> : <Menu size={30} />}
-      </button>
+      {!isOpen && (
+        <button
+          className="md:hidden text-white z-[1001]"
+          onClick={() => setIsOpen(true)}
+        >
+          <Menu size={30} />
+        </button>
+      )}
 
       {/* Desktop Links */}
       <div className="hidden md:flex gap-10">
-        <RouterLink to="/services" className="text-md capitalize font-medium">Skills</RouterLink>
-        <ScrollLink to="projects" smooth={true} duration={500} className="cursor-pointer text-md capitalize font-medium">Projects</ScrollLink>
-        <ScrollLink to="about" smooth={true} duration={500} className="cursor-pointer text-md capitalize font-medium">About</ScrollLink>
-        <RouterLink to="/contact" className="text-md capitalize font-medium">Contact</RouterLink>
+        <RouterLink to="/services" className="text-md capitalize font-medium">
+          Skills
+        </RouterLink>
+        <ScrollLink
+          to="projects"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer text-md capitalize font-medium"
+        >
+          Projects
+        </ScrollLink>
+        <ScrollLink
+          to="about"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer text-md capitalize font-medium"
+        >
+          About
+        </ScrollLink>
+        <RouterLink to="/contact" className="text-md capitalize font-medium">
+          Contact
+        </RouterLink>
       </div>
 
       {/* Mobile Menu */}
@@ -38,14 +57,45 @@ function Navbar() {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <button className="absolute top-5 right-5 text-white" onClick={() => setIsOpen(false)}>
+        <button
+          className="absolute top-5 right-5 text-white"
+          onClick={() => setIsOpen(false)}
+        >
           <X size={30} />
         </button>
         <div className="flex flex-col items-center justify-center h-full gap-8 text-xl">
-          <RouterLink to="/services" className="capitalize font-medium" onClick={() => setIsOpen(false)}>Services</RouterLink>
-          <ScrollLink to="projects" smooth={true} duration={500} className="capitalize font-medium" onClick={() => setIsOpen(false)}>Projects</ScrollLink>
-          <ScrollLink to="about" smooth={true} duration={500} className="capitalize font-medium" onClick={() => setIsOpen(false)}>About</ScrollLink>
-          <RouterLink to="/contact" className="capitalize font-medium" onClick={() => setIsOpen(false)}>Contact</RouterLink>
+          <RouterLink
+            to="/services"
+            className="capitalize font-medium"
+            onClick={() => setIsOpen(false)}
+          >
+            Services
+          </RouterLink>
+          <ScrollLink
+            to="projects"
+            smooth={true}
+            duration={500}
+            className="capitalize font-medium"
+            onClick={() => setIsOpen(false)}
+          >
+            Projects
+          </ScrollLink>
+          <ScrollLink
+            to="about"
+            smooth={true}
+            duration={500}
+            className="capitalize font-medium"
+            onClick={() => setIsOpen(false)}
+          >
+            About
+          </ScrollLink>
+          <RouterLink
+            to="/contact"
+            className="capitalize font-medium"
+            onClick={() => setIsOpen(false)}
+          >
+            Contact
+          </RouterLink>
         </div>
       </div>
     </nav>
