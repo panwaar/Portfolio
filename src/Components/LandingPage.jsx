@@ -48,7 +48,7 @@ function LandingPage() {
 
           <div className='start flex items-center gap-4'>
             <a 
-              href="/resume.pdf" // Add the correct path to your resume PDF
+              href="/resume.pdf" 
               download="Rahul_Panwar_Resume.pdf"
               className='px-5 py-2 border-[2px] border-white font-light text-sm capitalize rounded-full cursor-pointer hover:bg-white hover:text-black transition duration-300'
             >
