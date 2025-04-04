@@ -1,4 +1,6 @@
 import React from 'react'
+import linkedin from '../assets/linke_logo.png'
+import github from '../assets/github.png'
 
 function Cards() {
   return (
@@ -7,7 +9,7 @@ function Cards() {
       {/* LinkedIn Card */}
       <div className='w-full lg:w-1/2 h-[50vh]'>
         <div className='w-full h-full rounded-3xl bg-[#004D43] flex items-center justify-center relative p-5'>
-          <img className='w-[40%] max-w-[180px] sm:max-w-[250px]' src="linke_logo.png" alt="LinkedIn Logo" />
+          <img className='w-[40%] max-w-[180px] sm:max-w-[250px]' src={linkedin} alt="LinkedIn Logo" />
           <a
             href="https://www.linkedin.com/in/rahul-panwar-198a42221/"
             target="_blank"
@@ -25,7 +27,7 @@ function Cards() {
         
         {/* GitHub */}
         <div className='w-full h-full rounded-3xl bg-[#012924] relative flex items-center justify-center'>
-          <img className='w-[30vw] sm:w-[15vw] max-w-[120px]' src="github.png" alt="GitHub Logo" />
+          <img className='w-[30vw] sm:w-[15vw] max-w-[120px]' src={github} alt="GitHub Logo" />
           <a
             href="https://github.com/panwaar"
             target="_blank"
