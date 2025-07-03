@@ -30,18 +30,20 @@ Welcome to my personal portfolio website built with **React + Vite + Tailwind CS
 
 ## 📸 Screenshots
 
-### 🎬 Landing Page with Video Background  
-![Landing](https://github.com/user-attachments/assets/c8536f0e-003e-4ad3-b92d-f55b17deb8a4)
+### 🎬 Landing Page with Video Background
+|------------------|
+![image](https://github.com/user-attachments/assets/10faf859-87da-4120-a7db-2ccc95ea9689)
 
-### 🧠 Skills & Interests  
-![Skills](https://github.com/user-attachments/assets/93950a55-fb9d-4a01-bc4d-acf1c6090f15)
 
-### 📄 Resume Viewer  
-![Resume](https://github.com/user-attachments/assets/3a57dbce-7611-403d-a6b5-0ad983c05fc9)
+### 🧠 Skills & Interests 
+|------------------|
+![image](https://github.com/user-attachments/assets/b9d4c642-7cf9-4aa3-bd2c-40897ee144b2)
+  
 
 ### 💬 Contact Form  
-![Contact](https://github.com/user-attachments/assets/d7025a3d-024c-4341-b7e5-700b068f9031)
-
+|------------------|
+![Uploading image.png…]()
+ 
 ---
 
 ## 🧑‍💻 How to Run Locally
