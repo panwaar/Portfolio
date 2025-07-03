@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website built with **React + Vite + Tailwind CSS**. This is a fully responsive, single-page portfolio showcasing who I am, my skills, projects, internship experience, and how to connect with me.
 
-[![Live Portfolio](https://img.shields.io/badge/Live-Portfolio-blue?style=for-the-badge&logo=vercel)](https://your-portfolio-link.netlify.app/)
+[![Live Portfolio](https://img.shields.io/badge/Live-Portfolio-blue?style=for-the-badge&logo=vercel)]((https://rahulpanwar.netlify.app/))
 
 ---
 
