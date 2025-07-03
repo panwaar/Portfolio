@@ -28,6 +28,22 @@ Welcome to my personal portfolio website built with **React + Vite + Tailwind CS
 
 ---
 
+
+src/
+│
+├── assets/ # Media files (videos, images, resume)
+├── components/ # All React components
+│ ├── Navbar.jsx
+│ ├── LandingPage.jsx
+│ ├── About.jsx
+│ ├── Projects.jsx
+│ ├── Contact.jsx
+│ ├── Resume.jsx
+│ └── Services.jsx
+│
+├── App.jsx # Main App component with routes
+└── main.jsx # Entry point
+
 ## 📸 Screenshots
 
 ### 🎬 Landing Page with Video Background 
