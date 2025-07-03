@@ -30,19 +30,19 @@ Welcome to my personal portfolio website built with **React + Vite + Tailwind CS
 
 ## 📸 Screenshots
 
-### 🎬 Landing Page with Video Background
-|------------------|
+### 🎬 Landing Page with Video Background 
 ![image](https://github.com/user-attachments/assets/10faf859-87da-4120-a7db-2ccc95ea9689)
 
 
 ### 🧠 Skills & Interests 
-|------------------|
+ 
 ![image](https://github.com/user-attachments/assets/b9d4c642-7cf9-4aa3-bd2c-40897ee144b2)
   
 
 ### 💬 Contact Form  
-|------------------|
-![Uploading image.png…]()
+ 
+![image](https://github.com/user-attachments/assets/d2176161-39bb-4ac6-a17d-720d699a914a)
+
  
 ---
 
