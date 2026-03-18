@@ -43,6 +43,7 @@ src/
 │
 ├── App.jsx # Main App component with routes
 └── main.jsx # Entry point
+<!-- updated -->
 
 ## 📸 Screenshots
 
