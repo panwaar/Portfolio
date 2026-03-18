@@ -44,6 +44,8 @@ src/
 ├── App.jsx # Main App component with routes
 └── main.jsx # Entry point
 
+<--readmefile>
+
 ## 📸 Screenshots
 
 ### 🎬 Landing Page with Video Background 
