@@ -1,12 +1,30 @@
 import React from "react";
 
 const Interests = () => {
-  const interests = [
-    "Languages : C++, Python, SQL, HTML, CSS, javascript ",
-    "Technologies : Machine Learning , DBMS , UX/UI",
-    "Framework : React.js, Node.js, Express.js, Tailwind CSS",
-    "Core Competencies : Data Structures , Algorithm Analysis",
-    "Soft Skills : Communication , Problem Solving , Teamwork , Adaptability , Time Management",
+  const skills = [
+    {
+      category: "AI & ML",
+      items:
+        "Large Language Models, RAG Pipeline Design, Vector Databases, Semantic Search, Prompt Engineering, LLM Evaluation, Hybrid Retrieval, Hallucination Mitigation, Agentic Workflows",
+    },
+    {
+      category: "Frameworks & Tools",
+      items:
+        "LangChain, LangGraph, Hugging Face Transformers, FastAPI, Flask, Celery, Redis, Docker, Ollama, LiteLLM, Pydantic, Node.js, React.js",
+    },
+    {
+      category: "Databases",
+      items: "PostgreSQL, MongoDB, Qdrant, ChromaDB, FAISS",
+    },
+    {
+      category: "Cloud & APIs",
+      items:
+        "AWS (EC2), Azure OpenAI, OpenAI API, LiteLLM Gateway, REST APIs, Docker Compose",
+    },
+    {
+      category: "Languages",
+      items: "Python, C++, SQL",
+    },
   ];
 
   const services = [
@@ -32,14 +50,19 @@ const Interests = () => {
       <div className="absolute inset-0 bg-black/20 backdrop-blur-sm z-0" />
 
       <div className="relative z-10 mx-auto w-[85vw] md:w-[60vw] flex flex-col gap-[8vw] md:gap-[4vw]">
-        {/* Interests Box */}
+        {/* Skills Box */}
         <div className="w-full px-[5vw]  py-[6vw] md:px-[3vw] md:py-[2.5vw] bg-white/80 rounded-3xl shadow-xl border border-white/30 backdrop-blur-md">
           <h2 className="text-[6vw] md:text-4xl font-bold text-center mb-6 text-gray-900">
-            💡 Interests & Skills
+            💡 Technical Skills
           </h2>
           <ul className="list-disc list-inside space-y-3 text-[4vw] md:text-base text-gray-700">
-            {interests.map((interest, index) => (
-              <li key={index}>{interest}</li>
+            {skills.map((skill, index) => (
+              <li key={index} className="leading-relaxed">
+                <span className="font-semibold text-gray-900">
+                  {skill.category} :
+                </span>{" "}
+                {skill.items}
+              </li>
             ))}
           </ul>
         </div>
