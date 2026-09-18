@@ -9,13 +9,22 @@ function About() {
       </h1>
 
       <p className='font-["Neue_Montreal"] text-[4vw] sm:text-[2.6vw] md:text-[1.5vw] leading-[6.5vw] sm:leading-[4vw] md:leading-[2.3vw] tracking-tight'>
-        Hello Everyone, I am Rahul Panwar, a Computer Science graduate from Vellore Institute of Technology. During my time at VIT, I was an active member of the <span className='font-bold'>IoThinC</span> Club, where I contributed as a Web Developer, working on projects related to the Internet of Things.
+        I am Rahul Panwar, an AI engineer at <span className='font-bold'>Karma AI</span>, where I build document
+        intelligence systems for government agencies. Most of my work is retrieval: hybrid search across tens of
+        thousands of court judgments, pulling structured records out of unstructured case files, and the evaluation
+        infrastructure that tells me when a model is quietly getting things wrong.
         <br />
         <br />
-        I have a strong passion for technology and a deep interest in web development, data structures, algorithms, and machine learning. Additionally, I had the opportunity to intern with the <span className='font-bold'>Indian Army</span> as a Database Intern, where I gained hands-on experience in database management and system optimization.
+        I graduated from <span className='font-bold'>Vellore Institute of Technology</span> with a B.Tech in Computer
+        Science, specialising in AI and Robotics, and spent those years as a web developer with the{' '}
+        <span className='font-bold'>IoThinC</span> club. Before Karma AI I was at <span className='font-bold'>FirstLease</span>,
+        where I built their first internal RAG system and put natural language search over long client documents into
+        the hands of the sales, operations and compliance teams.
         <br />
         <br />
-        Beyond academics, I have been actively involved in volunteering and social initiatives, striving to make a meaningful impact through technology and community engagement.
+        What keeps me interested is grounding. Getting a model to sound confident is easy. Getting it to point at the
+        exact span of text an answer came from, and to fail loudly when it cannot, is the harder problem, and the one
+        that decides whether anyone can actually rely on the output.
       </p>
 
       {/* Green Box Container */}

@@ -31,18 +31,18 @@ const Skills = () => {
     {
       role: "AI Engineer",
       company: "Karma AI",
-      period: "April 2026 – Present",
+      period: "April 2026 - Present",
       paragraphs: [
-        "I work on document intelligence for government agencies, where a confidently wrong answer is far more expensive than no answer at all. I built a pipeline that reads unstructured case files and returns structured records — witnesses, evidence, timelines, accused — and a hybrid retrieval layer over 40,000+ court judgments that narrows by statutory section before ranking semantically, which cut irrelevant results by roughly 97% against plain similarity search.",
-        "Most of the interesting work has been in making output trustworthy rather than merely fluent. Anchor-span extraction, output whitelisting, and replacing model calls with deterministic parsing wherever a rule would do pushed grounding to about 91%. Around that I built the evaluation infrastructure — corruption testing that catches injected defects without crying wolf, an independent LLM judge, and a golden regression suite — plus a provider-agnostic gateway, so changing model providers is a config edit rather than a re-indexing project.",
+        "I work on document intelligence for government agencies, where a confidently wrong answer costs far more than no answer at all. I built a pipeline that reads unstructured case files and returns structured records for witnesses, evidence, timelines and accused. Alongside it sits a hybrid retrieval layer over 40,000+ court judgments that narrows by statutory section before ranking semantically, which cut irrelevant results by roughly 97% against plain similarity search.",
+        "Most of the interesting work has been in making output trustworthy rather than merely fluent. Anchor span extraction, output whitelisting, and replacing model calls with deterministic parsing wherever a rule would do pushed grounding to about 91%. Around that I built the evaluation infrastructure: corruption testing that catches injected defects without crying wolf, an independent LLM judge, and a golden regression suite. A provider agnostic gateway sits in front of it all, so changing model providers is a config edit rather than a re-indexing project.",
       ],
     },
     {
       role: "Software Developer",
       company: "FirstLease",
-      period: "Aug 2025 – April 2026",
+      period: "Aug 2025 - April 2026",
       paragraphs: [
-        "I built the company’s first internal RAG system: natural-language Q&A over long client requirement documents, backed by an ingestion pipeline that handled PDFs, spreadsheets, and scanned pages across 500+ internal files. Role-based access and conversation history took it from a prototype to something three teams — sales, operations, and compliance — relied on day to day, cutting document review time by an estimated 60%.",
+        "I built the company’s first internal RAG system: natural language Q&A over long client requirement documents, backed by an ingestion pipeline that handled PDFs, spreadsheets and scanned pages across 500+ internal files. Role based access and conversation history took it from a prototype to something three teams in sales, operations and compliance relied on day to day, cutting document review time by an estimated 60%.",
       ],
     },
   ];
@@ -65,9 +65,8 @@ const Skills = () => {
             {skills.map((skill, index) => (
               <li key={index} className="leading-relaxed">
                 <span className="font-semibold text-white">
-                  {skill.category}
-                </span>
-                <span className="text-[#e0d4cd]/60"> — </span>
+                  {skill.category}:
+                </span>{" "}
                 {skill.items}
               </li>
             ))}
@@ -83,7 +82,7 @@ const Skills = () => {
               <div key={index}>
                 <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
                   <h3 className="text-base md:text-xl font-semibold text-white">
-                    {job.role} · {job.company}
+                    {job.role} at {job.company}
                   </h3>
                   <span className="text-xs md:text-sm text-[#e0d4cd]/60 whitespace-nowrap">
                     {job.period}

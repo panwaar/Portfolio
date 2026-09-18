@@ -5,11 +5,11 @@ import resume from '../assets/resume.pdf';
 
 function LandingPage() {
   return (
-    <div data-scroll data-scroll-speed="-.8" className='relative w-full min-h-screen text-white overflow-hidden'>
+    <div data-scroll data-scroll-speed="-.8" className='relative w-full min-h-screen bg-black text-white overflow-hidden'>
 
       {/* Background Video */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        className="absolute inset-0 w-full h-full object-cover z-0"
         autoPlay
         loop
         muted
@@ -22,9 +22,9 @@ function LandingPage() {
       </video>
 
       {/* Content */}
-      <div className='relative z-10 w-full min-h-screen bg-[#011110]/60 pt-28 md:pt-32 px-5 md:px-20 pb-10'>
+      <div className='relative z-10 w-full min-h-screen bg-[#011110]/50 pt-28 md:pt-32 px-5 md:px-20 pb-10'>
         <div className='textStructure mt-16 md:mt-24 space-y-1'>
-          {["Hello, Welcome!", "I’m Rahul Panwar", "AI Engineer — RAG & LLM systems"].map((item, index) => (
+          {["Hello, Welcome!", "I’m Rahul Panwar", "AI Engineer, RAG & LLM Systems"].map((item, index) => (
             <div key={index} className='masker'>
               <div className='w-fit flex items-center'>
 
@@ -38,8 +38,8 @@ function LandingPage() {
 
         {/* Short intro */}
         <p className='mt-6 max-w-2xl text-[3.4vw] md:text-base leading-relaxed text-white/85'>
-          I build retrieval systems that turn dense, high-stakes documents into answers
-          people can actually trust — hybrid search over tens of thousands of records,
+          I build retrieval systems that turn dense, high stakes documents into answers
+          people can actually trust. Hybrid search over tens of thousands of records,
           structured extraction from messy PDFs, and the evaluation harnesses that keep
           a model honest once it reaches production.
         </p>
