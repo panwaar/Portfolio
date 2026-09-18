@@ -9,7 +9,7 @@ function Footer() {
 
         {/* Heading */}
         <div>
-          <h1 className='text-[12vw] sm:text-[8vw] lg:text-[2vw] uppercase font-semibold leading-tight'>Designed & developed by Rahul Panwar</h1>
+          <h1 className='text-[6vw] sm:text-[4vw] lg:text-[1.5vw] uppercase font-semibold leading-tight'>Designed & developed by Rahul Panwar</h1>
         </div>
 
 
@@ -19,10 +19,10 @@ function Footer() {
 
       {/* Right Side */}
       <div className='w-full lg:w-1/2 flex flex-col justify-center mt-20 lg:mt-0 pl-0 lg:pl-20'>
-        <h1 className='text-[7vw] sm:text-[8vw] lg:text-[5vw] font-semibold leading-none uppercase'>
+        <h1 className='text-[5.5vw] sm:text-[4.5vw] lg:text-[3vw] font-semibold leading-none uppercase'>
         Always evolving, always learning.
         </h1>
-        <h3 className='text-[4vw] sm:text-[2.5vw] lg:text-[2vw] mt-8 lg:mt-10'>
+        <h3 className='text-[3.2vw] sm:text-[2vw] lg:text-[1.2vw] mt-8 lg:mt-10'>
         © 2025 
         </h3>
       </div>

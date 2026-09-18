@@ -3,8 +3,12 @@ import bg_img from '../assets/bg.jpg';
 
 function About() {
   return (
-    <div className='w-full p-5 sm:p-10 md:p-20 bg-[#e0d4cd] rounded-tl-3xl rounded-tr-3xl text-black relative z-10'>
-      <h1 className='font-["Neue_Montreal"] text-[6vw] sm:text-[4vw] md:text-[2.5vw] leading-[7vw] sm:leading-[5vw] md:leading-[3.1vw] tracking-tight'>
+    <div className='w-full px-5 md:px-20 pt-24 md:pt-28 pb-16 md:pb-20 bg-[#e0d4cd] text-black'>
+      <h1 className='text-3xl md:text-5xl text-black font-bold tracking-tight pb-5 md:pb-6 border-b border-zinc-500 mb-8 md:mb-10'>
+        About Me
+      </h1>
+
+      <p className='font-["Neue_Montreal"] text-[4vw] sm:text-[2.6vw] md:text-[1.5vw] leading-[6.5vw] sm:leading-[4vw] md:leading-[2.3vw] tracking-tight'>
         Hello Everyone, I am Rahul Panwar, a Computer Science graduate from Vellore Institute of Technology. During my time at VIT, I was an active member of the <span className='font-bold'>IoThinC</span> Club, where I contributed as a Web Developer, working on projects related to the Internet of Things.
         <br />
         <br />
@@ -12,7 +16,7 @@ function About() {
         <br />
         <br />
         Beyond academics, I have been actively involved in volunteering and social initiatives, striving to make a meaningful impact through technology and community engagement.
-      </h1>
+      </p>
 
       {/* Green Box Container */}
       <div className='w-full sm:w-1/2 h-[50vh] sm:h-[70vh] rounded-3xl bg-[#7a8944] mt-10 mx-auto relative overflow-hidden'>

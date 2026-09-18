@@ -27,9 +27,9 @@ function Featured() {
   }
 
   return (
-    <div className="relative z-10 w-full py-20 bg-[#e0d4cd]">
+    <div className="w-full bg-[#e0d4cd] pt-24 md:pt-28 pb-16 md:pb-20">
       <div className="w-full px-6 md:px-20">
-        <h1 className="text-4xl md:text-8xl text-black font-bold tracking-tight pb-6 md:pb-8 border-b border-zinc-500">
+        <h1 className="text-3xl md:text-5xl text-black font-bold tracking-tight pb-6 md:pb-8 border-b border-zinc-500">
           Featured Projects
         </h1>
       </div>
@@ -58,7 +58,7 @@ function Featured() {
           ))}
 
           {hoveredText && (
-            <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 flex gap-2 text-[#989a12] text-4xl md:text-7xl pointer-events-none">
+            <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 flex gap-2 text-[#989a12] text-3xl md:text-5xl pointer-events-none">
               {hoveredText.split("").map((char, index) => (
                 <motion.span
                   key={index}

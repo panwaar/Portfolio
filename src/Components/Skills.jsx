@@ -1,6 +1,6 @@
 import React from "react";
 
-const Interests = () => {
+const Skills = () => {
   const skills = [
     {
       category: "AI & ML",
@@ -27,66 +27,82 @@ const Interests = () => {
     },
   ];
 
-  const services = [
-    "Database Intern at Indian Army",
-    "Time Duration : June 2023 - August 2023",
-
-    "Contributed to a high-level database management project focused on military vehicle part tracking.",
-
-    "Maintained and optimized a specialized SQL database for components of legacy military vehicles, including models from the 1950s.",
-
-    "Facilitated prototype creation and testing by managing data for obsolete components (e.g., carburetor fans) and their replacements.",
-
-    "Assisted in tracking parts developed from natural materials (like carbon and nickel), helping modernize older military systems.",
-
-    "Collaborated with a team supporting 100+ army personnel, ensuring precise and timely data for component hardening and tensile strength tests.",
-
-    "Played a key role in the successful production and integration of updated vehicle components, contributing to equipment readiness and longevity.",
+  const experience = [
+    {
+      role: "AI Engineer",
+      company: "Karma AI",
+      period: "April 2026 – Present",
+      paragraphs: [
+        "I work on document intelligence for government agencies, where a confidently wrong answer is far more expensive than no answer at all. I built a pipeline that reads unstructured case files and returns structured records — witnesses, evidence, timelines, accused — and a hybrid retrieval layer over 40,000+ court judgments that narrows by statutory section before ranking semantically, which cut irrelevant results by roughly 97% against plain similarity search.",
+        "Most of the interesting work has been in making output trustworthy rather than merely fluent. Anchor-span extraction, output whitelisting, and replacing model calls with deterministic parsing wherever a rule would do pushed grounding to about 91%. Around that I built the evaluation infrastructure — corruption testing that catches injected defects without crying wolf, an independent LLM judge, and a golden regression suite — plus a provider-agnostic gateway, so changing model providers is a config edit rather than a re-indexing project.",
+      ],
+    },
+    {
+      role: "Software Developer",
+      company: "FirstLease",
+      period: "Aug 2025 – April 2026",
+      paragraphs: [
+        "I built the company’s first internal RAG system: natural-language Q&A over long client requirement documents, backed by an ingestion pipeline that handled PDFs, spreadsheets, and scanned pages across 500+ internal files. Role-based access and conversation history took it from a prototype to something three teams — sales, operations, and compliance — relied on day to day, cutting document review time by an estimated 60%.",
+      ],
+    },
   ];
 
   return (
-    <div className="relative pt-[30vw] md:pt-[15vw] min-h-screen bg-gradient-to-br from-[#fbc2eb] to-[#a6c1ee] text-gray-800">
-      {/* Background overlay for contrast */}
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-sm z-0" />
+    <div className="w-full min-h-screen bg-[#e0d4cd] pt-24 md:pt-28 pb-16 md:pb-20">
+      <div className="w-full px-5 md:px-20">
+        <h1 className="text-3xl md:text-5xl text-black font-bold tracking-tight pb-5 md:pb-6 border-b border-zinc-500">
+          Skills & Experience
+        </h1>
+      </div>
 
-      <div className="relative z-10 mx-auto w-[85vw] md:w-[60vw] flex flex-col gap-[8vw] md:gap-[4vw]">
-        {/* Skills Box */}
-        <div className="w-full px-[5vw]  py-[6vw] md:px-[3vw] md:py-[2.5vw] bg-white/80 rounded-3xl shadow-xl border border-white/30 backdrop-blur-md">
-          <h2 className="text-[6vw] md:text-4xl font-bold text-center mb-6 text-gray-900">
-            💡 Technical Skills
+      <div className="w-full px-5 md:px-20 mt-8 md:mt-10 flex flex-col gap-6 md:gap-8">
+        {/* Skills */}
+        <div className="w-full rounded-3xl bg-[#004D43] text-[#e0d4cd] px-6 py-7 md:px-10 md:py-9">
+          <h2 className="text-xl md:text-3xl font-semibold mb-5">
+            Technical Skills
           </h2>
-          <ul className="list-disc list-inside space-y-3 text-[4vw] md:text-base text-gray-700">
+          <ul className="space-y-3 text-sm md:text-base">
             {skills.map((skill, index) => (
               <li key={index} className="leading-relaxed">
-                <span className="font-semibold text-gray-900">
-                  {skill.category} :
-                </span>{" "}
+                <span className="font-semibold text-white">
+                  {skill.category}
+                </span>
+                <span className="text-[#e0d4cd]/60"> — </span>
                 {skill.items}
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Services Box */}
-        <div className="w-full px-[5vw] mb-20 py-[6vw] md:px-[3vw] md:py-[2.5vw] bg-white/80 rounded-3xl shadow-xl border border-white/30 backdrop-blur-md">
-          <h2 className="text-[6vw] md:text-4xl font-bold text-center mb-6 text-gray-900">
-            🛠️ Internship
-          </h2>
-          <ul className="list-disc list-inside space-y-3 text-[4vw] md:text-base text-gray-700">
-                    {services.map((service, index) => (
-            <li key={index} className="leading-relaxed">
-                {service.includes("Indian Army") ? (
-                <span dangerouslySetInnerHTML={{ __html: service.replace("Indian Army", "<strong>Indian Army</strong>") }} />
-                ) : (
-                service
-                )}
-            </li>
+        {/* Experience */}
+        <div className="w-full rounded-3xl bg-[#012924] text-[#e0d4cd] px-6 py-7 md:px-10 md:py-9">
+          <h2 className="text-xl md:text-3xl font-semibold mb-5">Experience</h2>
+
+          <div className="space-y-7 md:space-y-8">
+            {experience.map((job, index) => (
+              <div key={index}>
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+                  <h3 className="text-base md:text-xl font-semibold text-white">
+                    {job.role} · {job.company}
+                  </h3>
+                  <span className="text-xs md:text-sm text-[#e0d4cd]/60 whitespace-nowrap">
+                    {job.period}
+                  </span>
+                </div>
+                <div className="space-y-3 text-sm md:text-base">
+                  {job.paragraphs.map((para, i) => (
+                    <p key={i} className="leading-relaxed">
+                      {para}
+                    </p>
+                  ))}
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Interests;
+export default Skills;
